@@ -40,7 +40,7 @@ mern-ai-flow/
 
  1. Clone Repo
 
-git clone https://github.com/your-username/mern-ai-flow.git
+git clone https://github.com/mallesh557/mern-ai-flow.git
 
 ---
 
@@ -92,4 +92,4 @@ Built a full-stack MERN AI application with real-time API integration and databa
 
 ---
 
-
+THE LIVE URL IS:https://mern-ai-flow-five.vercel.app/
