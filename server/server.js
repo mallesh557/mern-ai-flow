@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected ✅"))
+  .then(() => console.log("MongoDB Connected "))
   .catch(err => console.log(err));
 
 
@@ -49,7 +49,7 @@ app.post("/api/save", async (req, res) => {
 });
 // Test Route
 app.get("/", (req, res) => {
-  res.send("Backend is running 🚀");
+  res.send("Backend is running ");
 });
 
 
