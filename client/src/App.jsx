@@ -4,7 +4,7 @@ import "reactflow/dist/style.css";
 import axios from "axios";
 
 export default function App() {
-  const [history, setHistory] = useState([]);
+  
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
@@ -13,7 +13,7 @@ export default function App() {
   // Connect to backend
   const handleSave = async () => {
   try {
-    await axios.post("http://localhost:5000/api/save", {
+    await axios.post("https://mern-ai-backend-o5pq.onrender.com/api/save", {
       prompt: input,
       response: result,
     });
@@ -27,7 +27,7 @@ export default function App() {
     try {
       setLoading(true);
 
-      const res = await axios.post("http://localhost:5000/api/ask-ai", {
+      const res = await axios.post("https://mern-ai-backend-o5pq.onrender.com/api/ask-ai", {
         prompt: input,
       });
 
